@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '/navbar/Navbar.dart';
-import '/styles/my_icons.dart';
+import '/Landing Page/LandingPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +31,7 @@ class MyHomePage extends StatelessWidget{
       body: Container(
         decoration: BoxDecoration(color: Color.fromRGBO(12, 14, 12, 1)),
         child: Column(
-          children: <Widget>[Navbar()],
+          children: <Widget>[Navbar(), LandingPage(mobileBody: mobileBody, desktopBody: desktopBody)],
         ),
       ),
     );
